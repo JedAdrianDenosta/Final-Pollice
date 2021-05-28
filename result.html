@@ -20,7 +20,7 @@
             class="absolute bg-gradient-to-br from-green-100 via-green-50 to-purple-300 h-full w-full">
             <!--Background Image-->
             <img src="img/background-icons/BGCubes.svg"
-                class="absolute max-w-screen-lg max-h-screen ml-32 inset-y-0 -right-52 opacity-30 bg-auto filter blur-sm sm:bg-fixed sm:h-screen sm:opacity-30 sm:max-w-screen-lg sm:-right-28 md:max-w-screen-lg md:-right-28 lg:-right-16 lg:max-w-screen-2xl"
+                class="absolute max-w-screen-lg max-h-screen ml-32 inset-y-0 -right-52 opacity-30 bg-auto filter blur sm:bg-fixed sm:h-screen sm:opacity-30 sm:max-w-screen-lg sm:-right-28 md:max-w-screen-lg md:-right-28 lg:-right-16 lg:max-w-screen-2xl"
                 alt="" srcset="">
         </div>
         <!-- Main Parts -->
@@ -64,7 +64,7 @@
                             <span class="hidden lg:inline">Home</span>
                         </a>
                         <!-- Vote -->
-                        <a href="" class="nav-item">
+                        <a href="vote.html" class="nav-item">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -109,7 +109,7 @@
                 class="flex w-full h-auto flex-col flex-grow p-12 mt-auto mb-auto lg:mt-0 lg:mb-0 overflow-y-scroll text-gray-700 ">
                 <!-- Header -->
                 <div class="flex justify-between w-full">
-                    <div class="relative -ml-4 w-72 h-20 rounded-xl p-4 text-white shadow-lg sm:p-6 sm:w-7/12 sm:mt-3 sm:ml-2 sm:rounded-2xl  md:ml-4 md:mt-4 sm:h-28 "
+                    <div class="relative  w-72 h-20 rounded-xl p-4 text-white shadow-lg sm:p-6 sm:w-7/12 sm:mt-3 sm:ml-2 sm:rounded-2xl  md:ml-4 md:mt-4 sm:h-28 "
                         style="background: #FFA000;">
                         <div class="flex flex-col items-start ">
                             <h1
@@ -125,289 +125,475 @@
                         </div>
                     </div>
                     <a href="#">
-                        <img class="filter drop-shadow-xl mt-2 ml-6 w-16 h-16 sm:w-20 sm:h-20 sm:mt-6 sm:mr-8 md:w-24 md:h-24 md:mr-8 md:mt-6"
+                        <img class="filter drop-shadow-xl mt-3 ml-3 w-14 h-14 sm:w-20 sm:h-20 sm:mt-6 sm:mr-8 md:w-20 md:h-24 md:mr-8 md:mt-6"
                             src="img/heading-icons/Final Profile pic(1).svg" alt="" srcset="">
                     </a>
                 </div>
                 <!-- Title -->
-                <div class="relative inline-block p-0">
-                    <div class="w-full p-6 flex-row">
+                <div class="relative inline-block lg:p-12 lg:pt-6">
+                    <div class="w-full p-6 pb-3 lg:pt-0 flex-row">
                         <h1
-                            class="text-2xl font-medium tracking-wider flex justify-center sm:text-2xl md:text-3xl lg:text-4xl sm:p-1 md:p-3 lg:p-4">
+                            class="text-2xl font-normal tracking-wider flex justify-center sm:text-3xl md:text-4xl lg:text-4xl sm:p-1 md:p-3 lg:p-4">
                             Result
                         </h1>
                     </div>
-                    <div class="grid grid-cols-1 gap-4 mb-4 w-full h-auto justify-items-center 
-                    sm:grid sm:grid-cols-2 sm:gap-4 
-                    lg:grid lg:grid-cols-2 lg:gap-10 lg:p-2 lg:pt-2 lg:mb-8">
+                    <div class="pt-2 pb-8 md:pb-10 ">
+                        <h2 class="mt-1 text-gray-700 text-lg font-normal">Legend</h2>
+                        <div class="grid grid-cols-3 gap-2 w-60 items-start pt-1">
+                            <p class="flex justify-center text-xs p-1 bg-pink-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 1</p>
+                            <p class="flex justify-center text-xs p-1 bg-purple-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 2</p>
+                            <p class="flex justify-center text-xs p-1 bg-blue-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 3</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 gap-10 mb-12 w-full h-auto justify-items-center
+                    sm:grid sm:grid-cols-2 sm:gap-14 
+                    lg:grid lg:grid-cols-2 lg:gap-18 lg:mb-8">
                         <!-- Content -->
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-8 pr-8 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Chairperson
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-8 pr-8 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-3 pr-3 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
+                                    Vice-Chairperson
+                                </h4>
+                                <form action="/action_page.php" class="mt-4 mb-2">
+                                    <div
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(1000px);
+                                border-radius: 16px;">
+                            <!--First Content-->
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Secretary
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-8 pr-8 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Treasurer
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-8 pr-8 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Auditor
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-3 pr-3 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Business Manager
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-8 pr-8 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Peace Officer
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Representative 1
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <div class="filter backdrop-blur-3xl w-10/12 h-10/12 p-6 pl-4 pr-4 border order-first border-white shadow-xl"
+                        <div class="filter backdrop-blur-3xl w-full h-full p-6 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(1000px);
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 text-white rounded-lg text-base sm:w-auto md:text-lg"
-                                    style="background: #E2502B;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                style="background: #4338ca;">
                                     Representative 2
                                 </h4>
                                 <form action="/action_page.php" class="mt-4 mb-2">
                                     <div
-                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm">
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-500 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light" checked>
-                                            <span class="design"></span>
-                                            <span class="text">Jane Cooper</span>
+                                        class="w-auto h-auto text-white text-xs grid grid-cols-1 gap-1 md:text-sm p-4 pt-2">
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jane Cooper</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        50%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-400 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Eleanor Pena</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Eleanor Pena</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        35%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
-
-                                        <label class="w-auto h-auto flex justify-center bg-indigo-300 p-2 pr-8 pl-8 rounded-sm tracking-wide filter drop-shadow-md">
-                                            <input type="hidden" name="light">
-                                            <span class="design"></span>
-                                            <span class="text">Jenny Wilson</span>
+                                        <label class="w-auto h-auto flex justify-center bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">
+                                            <span class="grid grid-cols-2">
+                                                <input type="hidden" name="light" checked>
+                                                <span class="w-40 row-span-2 col-start-1 items-center justify-items-center text-sm">Jenny Wilson</span>
+                                                <span class="w-auto flex justify-end text-sm">
+                                                    <span class=" p-0 pl-2 pr-2">
+                                                        25%
+                                                    </span>
+                                                </span>
+                                            </span>
                                         </label>
                                     </div>
                                 </form>
