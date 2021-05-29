@@ -619,7 +619,7 @@ video {
 
 @media (min-width: 1024px){
   .nav-item-active{
-    padding: 1rem;
+    padding: 0.75rem;
     padding-left: 1.25rem;
     padding-right: 1.5rem;
   }
@@ -190646,14 +190646,4 @@ video {
   }
 }
 
-.bg-main {
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
-  --tw-gradient-from: #d1fae5;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(209, 250, 229, 0));
-  --tw-gradient-stops: var(--tw-gradient-from), #ecfdf5, var(--tw-gradient-to, rgba(236, 253, 245, 0));
-  --tw-gradient-to: #c4b5fd;
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
 

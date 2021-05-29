@@ -33,10 +33,10 @@
                     style="z-index:-10">
                 </div>
                 <nav
-                    class="flex flex-col w-full h-full justify-around items-center text-xl font-normal text-white lg:space-y-10 lg:p-10">
+                    class="flex flex-col w-full h-full justify-evenly items-center text-xl font-normal text-white lg:p-12 lg:pt-0">
                     <!-- Main Logo -->
                     <a href="error.html" class="hidden lg:block">
-                        <img class="object-top mt-4 filter drop-shadow-lg" src="img/Main Logo.svg" alt="">
+                        <img class="object-top filter drop-shadow-lg" src="img/Main Logo.svg" alt="">
                         <p class="filter drop-shadow-xl text-2xl flex justify-center font-light tracking-wide"
                             style="color: #16BDCA;">
                             Pollice
@@ -44,19 +44,9 @@
                     </a>
                     <!-- Flex List Of NavLinks -->
                     <div
-                        class="flex w-full flex-row justify-evenly items-center py-3 px-3 sm:flex sm:justify-evenly lg:flex-col lg:space-y-10 lg:items-start lg:place-content-center">
+                        class="flex w-full flex-row justify-around items-center py-3 px-3 sm:flex sm:justify-around lg:flex-col lg:space-y-10 lg:items-start lg:place-content-center">
                         <!-- Home -->
                         <a href="home.html" class="nav-item">
-                            <!--<svg class="w-6 h-6 md:w-7 md:h-7" width="35" height="35" viewBox="0 0 35 35" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M17.9049 5.41238C17.7963 5.30111 17.6519 5.23901 17.5016 5.23901C17.3514 5.23901 17.207 5.30111 17.0984 5.41238L3.67448 19.1523C3.61747 19.2107 3.57211 19.2809 3.54116 19.3587C3.5102 19.4364 3.49429 19.5201 3.49437 19.6046L3.49219 32.5C3.49219 33.163 3.73802 33.7989 4.1756 34.2678C4.61319 34.7366 5.20668 35 5.82552 35H12.8328C13.1422 35 13.439 34.8683 13.6577 34.6339C13.8765 34.3995 13.9995 34.0815 13.9995 33.75V23.125C13.9995 22.9592 14.0609 22.8002 14.1703 22.683C14.2797 22.5658 14.4281 22.5 14.5828 22.5H20.4161C20.5708 22.5 20.7192 22.5658 20.8286 22.683C20.938 22.8002 20.9994 22.9592 20.9994 23.125V33.75C20.9994 34.0815 21.1224 34.3995 21.3412 34.6339C21.5599 34.8683 21.8567 35 22.1661 35H29.1705C29.7893 35 30.3828 34.7366 30.8204 34.2678C31.258 33.7989 31.5038 33.163 31.5038 32.5V19.6046C31.5039 19.5201 31.488 19.4364 31.457 19.3587C31.4261 19.2809 31.3807 19.2107 31.3237 19.1523L17.9049 5.41238Z"
-                                    fill="white" />
-                                <path
-                                    d="M34.6288 16.5743L29.1746 10.9836V2.50001C29.1746 2.16849 29.0517 1.85054 28.8329 1.61612C28.6141 1.3817 28.3174 1.25001 28.008 1.25001H24.508C24.1986 1.25001 23.9018 1.3817 23.683 1.61612C23.4642 1.85054 23.3413 2.16849 23.3413 2.50001V5.00002L19.118 0.67344C18.7228 0.245313 18.1351 0 17.5 0C16.8671 0 16.2808 0.245314 15.8856 0.674222L0.376277 16.5727C-0.0772638 17.0415 -0.134139 17.8126 0.278569 18.3204C0.382206 18.4486 0.509102 18.5528 0.651535 18.6268C0.793969 18.7007 0.94896 18.7429 1.10708 18.7506C1.26519 18.7584 1.42312 18.7316 1.57126 18.6718C1.7194 18.6121 1.85465 18.5207 1.96877 18.4032L17.0989 2.91251C17.2075 2.80125 17.3519 2.73915 17.5022 2.73915C17.6524 2.73915 17.7968 2.80125 17.9054 2.91251L33.037 18.4032C33.2599 18.6322 33.5585 18.7572 33.8673 18.7508C34.176 18.7443 34.4698 18.607 34.6842 18.3688C35.1319 17.872 35.0947 17.0516 34.6288 16.5743Z"
-                                    fill="white" />
-                            </svg>
-                            <span class="hidden lg:inline">Home</span>-->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -65,7 +55,7 @@
                             <span class="hidden lg:inline">Home</span>
                         </a>
                         <!-- Vote -->
-                        <a href="" class="nav-item-active">
+                        <a href="vote.html" class="nav-item-active">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -94,15 +84,16 @@
                             </svg>
                             <span class="hidden lg:inline">About</span>
                         </a>
+                        <!--Profile-->
+                        <a href="userprofile.html" class="nav-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
+                                viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="hidden lg:inline">Profile</span>
+                        </a>
                     </div>
-                    <!-- Logout -->
-                    <a href="#" class="hidden lg:block">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-8=7" viewBox="0 0 20 20" fill="#4338CA">
-                            <path fill-rule="evenodd"
-                                d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
                 </nav>
             </div>
             <!-- Main Body -->
@@ -137,14 +128,20 @@
                             class="text-2xl font-normal tracking-wider flex justify-center sm:text-3xl md:text-4xl lg:text-4xl sm:p-1 md:p-3 lg:p-4">
                             Vote
                         </h1>
-                        
+
                     </div>
                     <div class="pt-2 pl-1 pb-8 md:pb-10 ">
                         <h2 class="mt-1 text-gray-700 text-lg font-normal">Legend</h2>
                         <div class="grid grid-cols-3 gap-2 w-60 items-start pt-1">
-                            <p class="flex justify-center text-xs p-1 bg-pink-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 1</p>
-                            <p class="flex justify-center text-xs p-1 bg-purple-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 2</p>
-                            <p class="flex justify-center text-xs p-1 bg-blue-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">Party 3</p>
+                            <p
+                                class="flex justify-center text-xs p-1 bg-pink-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">
+                                Party 1</p>
+                            <p
+                                class="flex justify-center text-xs p-1 bg-purple-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">
+                                Party 2</p>
+                            <p
+                                class="flex justify-center text-xs p-1 bg-blue-400 w-auto text-white font-light tracking-wide rounded-lg sm:text-sm">
+                                Party 3</p>
                         </div>
                     </div>
                     <div class="grid grid-cols-1 gap-10 mb-12 w-full h-auto justify-items-center
@@ -158,29 +155,34 @@
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                    style="background: #4338ca;">
                                     Chairperson
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -192,30 +194,35 @@
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
                                     Vice-Chairperson
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -228,29 +235,34 @@
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                    style="background: #4338ca;">
                                     Secretary
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -263,29 +275,34 @@
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                    style="background: #4338ca;">
                                     Treasurer
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -298,29 +315,34 @@
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                    style="background: #4338ca;">
                                     Auditor
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -332,30 +354,35 @@
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-4 pr-4 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
                                     Business Manager
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -368,29 +395,34 @@
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                    style="background: #4338ca;">
                                     Peace Officer
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -402,30 +434,35 @@
                                 border-radius: 16px;">
                             <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-6 pr-6 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
                                     Representative 1
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -437,30 +474,35 @@
                                 border-radius: 16px;">
                             <!--Eighth Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                style="background: #4338ca;">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-6 pr-6 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
                                     Representative 2
                                 </h4>
                                 <form action="/action_page.php">
-                                    <div
-                                        class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
+                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
                                         sm:text-base">
                                         <label>
                                             <input type="radio" name="light" class="" checked>
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane Cooper</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
+                                                Cooper</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor Pena</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
+                                                Pena</span>
                                         </label>
 
                                         <label>
                                             <input type="radio" name="light">
                                             <span class="design"></span>
-                                            <span class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny Wilson</span>
+                                            <span
+                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
+                                                Wilson</span>
                                         </label>
                                     </div>
                                 </form>
@@ -471,7 +513,7 @@
                 <a href="">
                     <div class="flex justify-end p-0 pt-0 pl-0 pb-12 lg:pr-12">
                         <button
-                            class="transition duration-500 ease-in-out hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 rounded-xl p-3 h-14 w-36 text-white text-lg bg-red-500 
+                            class="modal-open transition duration-500 ease-in-out hover:bg-indigo-500 transform hover:-translate-y-1 hover:scale-110 rounded-xl p-3 h-14 w-36 text-white text-lg bg-indigo-600 
                         lg:text-xl lg:p-4 lg:h-16 lg:w-40 lg:transition lg:duration-300 lg:ease-in-out lg:transform lg:hover:-translate-y-1 lg:hover:scale-110">
                             Submit
                         </button>
@@ -480,6 +522,94 @@
             </div>
         </div>
     </div>
+
+    <!--Modal-->
+    <div class="modal font-body opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+    style="color: #333333;">
+        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+
+        <div class="modal-container bg-white w-11/12  md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+
+            <div
+                class="modal-close absolute top-0 p-8 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                <span class="text-sm">(Esc)</span>
+            </div>
+
+            <!-- Add margin if you want to see some of the overlay behind the modal-->
+            <div class="modal-content py-4 text-left px-6">
+                <!--Title-->
+                <div class="flex justify-between items-center pb-3">
+                    <p class="text-2xl font-bold">Simple Modal!</p>
+                    <div class="modal-close cursor-pointer z-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                    </div>
+                </div>
+
+                <!--Body-->
+                <p>Password Confirm</p>
+                <div class="py-4">
+                    <div class="flex flex-row items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="">
+                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                          </svg>
+                        <input type="text" placeholder="Enter password" name="Confirm password" id=""
+                        class="outline-none rounded-sm p-1 border-solid ring-2 ring-gray-400 hover:border-indigo-500 ring-opacity-50">
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="flex justify-end pt-2">
+                    <button
+                        class="modal-close px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
+                    <button
+                        class="px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var openmodal = document.querySelectorAll('.modal-open')
+        for (var i = 0; i < openmodal.length; i++) {
+            openmodal[i].addEventListener('click', function (event) {
+                event.preventDefault()
+                toggleModal()
+            })
+        }
+
+        const overlay = document.querySelector('.modal-overlay')
+        overlay.addEventListener('click', toggleModal)
+
+        var closemodal = document.querySelectorAll('.modal-close')
+        for (var i = 0; i < closemodal.length; i++) {
+            closemodal[i].addEventListener('click', toggleModal)
+        }
+        document.onkeydown = function (evt) {
+            evt = evt || window.event
+            var isEscape = false
+            if ("key" in evt) {
+                isEscape = (evt.key === "Escape" || evt.key === "Esc")
+            } else {
+                isEscape = (evt.keyCode === 27)
+            }
+            if (isEscape && document.body.classList.contains('modal-active')) {
+                toggleModal()
+            }
+        };
+
+        function toggleModal() {
+            const body = document.querySelector('body')
+            const modal = document.querySelector('.modal')
+            modal.classList.toggle('opacity-0')
+            modal.classList.toggle('pointer-events-none')
+            body.classList.toggle('modal-active')
+        }
+    </script>
 </body>
 
 </html>
