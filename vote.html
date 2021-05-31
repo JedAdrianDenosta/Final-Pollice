@@ -7,13 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Logo Icon" href="img/Main Logo.svg">
     <link rel="stylesheet" href="public/css/tailwind.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <style>
+        .radio-buttons {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 1em;
+            padding-bottom: 1em;
+        }
 
-    <title>Pollice | Vote</title>
+        .custom-radio input {
+            display: none;
+        }
+
+        .radio-btn {
+            margin: 10px;
+            border: 3px solid rgba(255, 255, 255, 0);
+            display: flex;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            box-shadow: 0 0 20px #c3c3c367;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .radio-btn > i {
+            color: #ffffff;
+            background-color: #86e673; 
+            font-size: 20px;
+            position: absolute;
+            top: -15px;
+            left: 100%;
+            transform: translateX(-50%) scale(0);
+            border-radius: 50px;
+            padding: 3px;
+            transition: 0.2s;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        
+        .custom-radio input:checked+.radio-btn {
+            border: 3px solid white;
+        }
+
+        .custom-radio input:checked+.radio-btn > i {
+            opacity: 1;
+            transform: translateX(-50%) scale(1);
+        }
+    </style>
+
+    <title>Pollice | Test</title>
 </head>
 
 <!-- Body Class -->
 
-<body class="font-body" style="font-display: swap;">
+<body class="font-body" style="font-display: swap; color: #333333;">
     <!-- Main Container -->
     <div class="relative h-screen w-full overflow-hidden">
         <!-- Background-->
@@ -36,7 +88,7 @@
                     class="flex flex-col w-full h-full justify-evenly items-center text-xl font-normal text-white lg:p-12 lg:pt-0">
                     <!-- Main Logo -->
                     <a href="error.html" class="hidden lg:block">
-                        <img class="object-top filter drop-shadow-lg" src="img/Main Logo.svg" alt="">
+                        <img class="object-top filter drop-shadow-lg lg:-mt-14" src="img/Main Logo.svg" alt="">
                         <p class="filter drop-shadow-xl text-2xl flex justify-center font-light tracking-wide"
                             style="color: #16BDCA;">
                             Pollice
@@ -84,15 +136,6 @@
                             </svg>
                             <span class="hidden lg:inline">About</span>
                         </a>
-                        <!--Profile-->
-                        <a href="userprofile.html" class="nav-item">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
-                                viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            <span class="hidden lg:inline">Profile</span>
-                        </a>
                     </div>
                 </nav>
             </div>
@@ -116,7 +159,7 @@
                                 srcset="" style="right: 8px">
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="userprofile.html">
                         <img class="filter drop-shadow-xl mt-3 ml-3 w-14 h-14 sm:w-20 sm:h-20 sm:mt-6 sm:mr-8 md:w-20 md:h-24 md:mr-8 md:mt-6"
                             src="img/heading-icons/Final Profile pic(1).svg" alt="" srcset="">
                     </a>
@@ -130,6 +173,7 @@
                         </h1>
 
                     </div>
+                    <!--Legends-->
                     <div class="pt-2 pl-1 pb-8 md:pb-10 ">
                         <h2 class="mt-1 text-gray-700 text-lg font-normal">Legend</h2>
                         <div class="grid grid-cols-3 gap-2 w-60 items-start pt-1">
@@ -144,370 +188,760 @@
                                 Party 3</p>
                         </div>
                     </div>
+                    <!--Voting Forms-->
                     <div class="grid grid-cols-1 gap-10 mb-12 w-full h-auto justify-items-center
                     sm:grid sm:grid-cols-2 sm:gap-14 
                     lg:grid lg:grid-cols-2 lg:gap-18 lg:mb-8">
-                        <!-- Content -->
+                        <!--Chairperson-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Chairperson
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Chairperson" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Chairperson"  />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Chairperson"  />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    
+                                </div>
                             </div>
                         </div>
+                        <!--Vice-Chairperson-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-5 pr-5 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-5 pr-5 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Vice-Chairperson
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Vice-Chairperson" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Vice-Chairperson"  />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Vice-Chairperson"  />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Secretary-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Secretary
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Secretary" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Secretary" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Secretary" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Asst. Secretary-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    Assistant Secretary
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Secretary" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Secretary" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Secretary" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Treasurer-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Treasurer
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Treasurer" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Treasurer" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Treasurer" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Asst. Treasurer-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    Assistant Treasurer
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Treasurer" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Treasurer" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Treasurer" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Auditor-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Auditor
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Auditor" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Auditor" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Auditor" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Asst. Auditor-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-4 pr-4 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    Assistant Auditor
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Auditor" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Auditor" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Auditor" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Business Manager-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
                                     Business Manager
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Business Manager" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Business Manager" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Business Manager" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Asst. Business Manager-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
-                                    Peace Officer
+                                    Assistant <br> Business Manager
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Business Manager" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Business Manager" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. Business Manager" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--P.I.O.-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--First Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-6 pr-6 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
-                                    Representative 1
+                                    P.I.O.
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="P.I.O." checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="P.I.O." />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="P.I.O." />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--Asst. P.I.O.-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(1000px);
+                                backdrop-filter: blur(100px);
                                 border-radius: 16px;">
-                            <!--Eighth Content-->
                             <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 mb-1 pl-6 pr-6 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                <h4 class="flex flex-col justify-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
-                                    Representative 2
+                                    Assistant P.I.O.
                                 </h4>
-                                <form action="/action_page.php">
-                                    <div class="w-full h-auto text-white text-sm grid grid-cols-1 gap-2 p-6 space-y-3
-                                        sm:text-base">
-                                        <label>
-                                            <input type="radio" name="light" class="" checked>
-                                            <span class="design"></span>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. P.I.O." checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-pink-400 to-pink-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jane
-                                                Cooper</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. P.I.O." />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-purple-400 to-purple-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Eleanor
-                                                Pena</span>
-                                        </label>
-
-                                        <label>
-                                            <input type="radio" name="light">
-                                            <span class="design"></span>
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="Asst. P.I.O." />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
                                             <span
-                                                class="text w-auto h-auto bg-gradient-to-r from-blue-400 to-blue-300 p-2 pr-4 pl-4 rounded-sm tracking-wide filter drop-shadow-md">Jenny
-                                                Wilson</span>
-                                        </label>
-                                    </div>
-                                </form>
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                        <!--BSCS Representative-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    BSCS Representative
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSCS Representative" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSCS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSCS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BSIT Representative-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    BSIT Representative
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIT Representative" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIT Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIT Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BSIS Representative-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    BSIS Representative
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIS Representative" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSIS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BSEMC Representative-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    BSEMC Representative
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSEMC Representative" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSEMC Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BSEMC Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--BLIS Representative-->
+                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
+                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+                                backdrop-filter: blur(100px);
+                                border-radius: 16px;">
+                            <div class="flex items-center flex-col w-auto h-auto">
+                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
+                                    style="background: #4338ca;">
+                                    BLIS Representative
+                                </h4>
+                                <div class="radio-buttons">
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BLIS Representative" checked />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BLIS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                    <label class="custom-radio">
+                                        <input type="radio" name="BLIS Representative" />
+                                        <span class="radio-btn pt-4 pb-4">
+                                            <i class="las la-check"></i>
+                                            <span
+                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
+                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
+                                            </span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <a href="">
@@ -525,17 +959,18 @@
 
     <!--Modal-->
     <div class="modal font-body opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
-    style="color: #333333;">
+        style="color: #333333;">
         <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
         <div class="modal-container bg-white w-11/12  md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
 
             <div
-                class="modal-close absolute top-0 p-8 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                class="modal-close  absolute top-0 p-4 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                <span class="text-sm">(Esc)</span>
+                </svg>
+                <span class="text-xs">(Esc)</span>
             </div>
 
             <!-- Add margin if you want to see some of the overlay behind the modal-->
@@ -544,9 +979,11 @@
                 <div class="flex justify-between items-center pb-3">
                     <p class="text-2xl font-bold">Simple Modal!</p>
                     <div class="modal-close cursor-pointer z-50">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                          </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </div>
                 </div>
 
@@ -555,10 +992,12 @@
                 <div class="py-4">
                     <div class="flex flex-row items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="">
-                            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
-                          </svg>
+                            <path fill-rule="evenodd"
+                                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                                clip-rule="evenodd" />
+                        </svg>
                         <input type="text" placeholder="Enter password" name="Confirm password" id=""
-                        class="outline-none rounded-sm p-1 border-solid ring-2 ring-gray-400 hover:border-indigo-500 ring-opacity-50">
+                            class="outline-none rounded-sm p-1 border-solid ring-2 ring-gray-400 hover:border-indigo-500 ring-opacity-50">
                     </div>
                 </div>
 
@@ -566,8 +1005,7 @@
                 <div class="flex justify-end pt-2">
                     <button
                         class="modal-close px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
-                    <button
-                        class="px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Confirm</button>
+                    <button class="px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Confirm</button>
                 </div>
             </div>
         </div>
