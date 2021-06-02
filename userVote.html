@@ -34,9 +34,9 @@
             justify-content: center;
         }
 
-        .radio-btn > i {
+        .radio-btn>i {
             color: #ffffff;
-            background-color: #86e673; 
+            background-color: #86e673;
             font-size: 20px;
             position: absolute;
             top: -15px;
@@ -49,18 +49,18 @@
             opacity: 0;
         }
 
-        
+
         .custom-radio input:checked+.radio-btn {
             border: 3px solid white;
         }
 
-        .custom-radio input:checked+.radio-btn > i {
+        .custom-radio input:checked+.radio-btn>i {
             opacity: 1;
             transform: translateX(-50%) scale(1);
         }
     </style>
 
-    <title>Pollice | Test</title>
+    <title>Pollice | Vote</title>
 </head>
 
 <!-- Body Class -->
@@ -87,7 +87,7 @@
                 <nav
                     class="flex flex-col w-full h-full justify-evenly items-center text-xl font-normal text-white lg:p-12 lg:pt-0">
                     <!-- Main Logo -->
-                    <a href="error.html" class="hidden lg:block">
+                    <a href="#" class="hidden lg:block">
                         <img class="object-top filter drop-shadow-lg lg:-mt-14" src="img/Main Logo.svg" alt="">
                         <p class="filter drop-shadow-xl text-2xl flex justify-center font-light tracking-wide"
                             style="color: #16BDCA;">
@@ -98,7 +98,7 @@
                     <div
                         class="flex w-full flex-row justify-around items-center py-3 px-3 sm:flex sm:justify-around lg:flex-col lg:space-y-10 lg:items-start lg:place-content-center">
                         <!-- Home -->
-                        <a href="home.html" class="nav-item">
+                        <a href="userHome.html" class="nav-item">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -107,7 +107,7 @@
                             <span class="hidden lg:inline">Home</span>
                         </a>
                         <!-- Vote -->
-                        <a href="vote.html" class="nav-item-active">
+                        <a href="userVote.html" class="nav-item-active">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path
@@ -116,7 +116,7 @@
                             <span class="hidden lg:inline">Vote</span>
                         </a>
                         <!-- Result -->
-                        <a href="result.html" class="nav-item">
+                        <a href="userResult.html" class="nav-item">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -126,7 +126,7 @@
                             <span class="hidden lg:inline">Result</span>
                         </a>
                         <!-- About -->
-                        <a href="about.html" class="nav-item">
+                        <a href="userAbout.html" class="nav-item">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 md:w-8 md:h-8 lg:w-9 lg:h-9"
                                 viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
@@ -159,7 +159,7 @@
                                 srcset="" style="right: 8px">
                         </div>
                     </div>
-                    <a href="userprofile.html">
+                    <a href="userProfile.html">
                         <img class="filter drop-shadow-xl mt-3 ml-3 w-14 h-14 sm:w-20 sm:h-20 sm:mt-6 sm:mr-8 md:w-20 md:h-24 md:mr-8 md:mt-6"
                             src="img/heading-icons/Final Profile pic(1).svg" alt="" srcset="">
                     </a>
@@ -171,7 +171,6 @@
                             class="text-2xl font-normal tracking-wider flex justify-center sm:text-3xl md:text-4xl lg:text-4xl sm:p-1 md:p-3 lg:p-4">
                             Vote
                         </h1>
-
                     </div>
                     <!--Legends-->
                     <div class="pt-2 pl-1 pb-8 md:pb-10 ">
@@ -204,7 +203,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Chairperson" checked />
+                                        <input type="radio" name="chairperson" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -214,7 +213,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Chairperson"  />
+                                        <input type="radio" name="chairperson" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -224,7 +223,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Chairperson"  />
+                                        <input type="radio" name="chairperson" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -233,7 +232,6 @@
                                             </span>
                                         </span>
                                     </label>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -249,7 +247,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Vice-Chairperson" checked />
+                                        <input type="radio" name="vice_chairperson" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -259,7 +257,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Vice-Chairperson"  />
+                                        <input type="radio" name="vice_chairperson" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -269,7 +267,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Vice-Chairperson"  />
+                                        <input type="radio" name="vice_chairperson" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -293,7 +291,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Secretary" checked />
+                                        <input type="radio" name="secretary" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -303,7 +301,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Secretary" />
+                                        <input type="radio" name="secretary" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -313,7 +311,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Secretary" />
+                                        <input type="radio" name="secretary" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -337,7 +335,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Secretary" checked />
+                                        <input type="radio" name="assistant_secretary" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -347,7 +345,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Secretary" />
+                                        <input type="radio" name="assistant_secretary" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -357,7 +355,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Secretary" />
+                                        <input type="radio" name="assistant_secretary" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -381,7 +379,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Treasurer" checked />
+                                        <input type="radio" name="treasurer" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -391,7 +389,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Treasurer" />
+                                        <input type="radio" name="treasurer" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -401,7 +399,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Treasurer" />
+                                        <input type="radio" name="treasurer" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -425,7 +423,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Treasurer" checked />
+                                        <input type="radio" name="assistant_treasurer" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -435,7 +433,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Treasurer" />
+                                        <input type="radio" name="assistant_treasurer" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -445,7 +443,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Treasurer" />
+                                        <input type="radio" name="assistant_treasurer" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -469,7 +467,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Auditor" checked />
+                                        <input type="radio" name="auditor" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -479,7 +477,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Auditor" />
+                                        <input type="radio" name="auditor" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -489,7 +487,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Auditor" />
+                                        <input type="radio" name="auditor" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -513,7 +511,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Auditor" checked />
+                                        <input type="radio" name="assistant_auditor" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -523,7 +521,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Auditor" />
+                                        <input type="radio" name="assistant_auditor" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -533,7 +531,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Auditor" />
+                                        <input type="radio" name="assistant_auditor" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -557,7 +555,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Business Manager" checked />
+                                        <input type="radio" name="business_manager" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -567,7 +565,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Business Manager" />
+                                        <input type="radio" name="business_manager" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -577,7 +575,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Business Manager" />
+                                        <input type="radio" name="business_manager" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -601,7 +599,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Business Manager" checked />
+                                        <input type="radio" name="assistant_business_manager" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -611,7 +609,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Business Manager" />
+                                        <input type="radio" name="assistant_business_manager" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -621,7 +619,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. Business Manager" />
+                                        <input type="radio" name="assistant_business_manager" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -645,7 +643,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="P.I.O." checked />
+                                        <input type="radio" name="pio" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -655,7 +653,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="P.I.O." />
+                                        <input type="radio" name="pio" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -665,7 +663,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="P.I.O." />
+                                        <input type="radio" name="pio" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -689,7 +687,7 @@
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. P.I.O." checked />
+                                        <input type="radio" name="assistant_pio" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -699,7 +697,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. P.I.O." />
+                                        <input type="radio" name="assistant_pio" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -709,7 +707,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="Asst. P.I.O." />
+                                        <input type="radio" name="assistant_pio" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -721,7 +719,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--BSCS Representative-->
+                        <!--Representative 1-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(100px);
@@ -729,11 +727,11 @@
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
-                                    BSCS Representative
+                                    Representative 1
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSCS Representative" checked />
+                                        <input type="radio" name="Representative 1" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -743,7 +741,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSCS Representative" />
+                                        <input type="radio" name="Representative 1" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -753,7 +751,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSCS Representative" />
+                                        <input type="radio" name="Representative 1" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -765,7 +763,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!--BSIT Representative-->
+                        <!--Representative 2-->
                         <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
                             style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
                                 backdrop-filter: blur(100px);
@@ -773,11 +771,11 @@
                             <div class="flex items-center flex-col w-auto h-auto">
                                 <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
                                     style="background: #4338ca;">
-                                    BSIT Representative
+                                    Representative 2
                                 </h4>
                                 <div class="radio-buttons">
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSIT Representative" checked />
+                                        <input type="radio" name="Representative 2" checked />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -787,7 +785,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSIT Representative" />
+                                        <input type="radio" name="Representative 2" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -797,7 +795,7 @@
                                         </span>
                                     </label>
                                     <label class="custom-radio">
-                                        <input type="radio" name="BSIT Representative" />
+                                        <input type="radio" name="Representative 2" />
                                         <span class="radio-btn pt-4 pb-4">
                                             <i class="las la-check"></i>
                                             <span
@@ -809,139 +807,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--BSIS Representative-->
-                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
-                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(100px);
-                                border-radius: 16px;">
-                            <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                    style="background: #4338ca;">
-                                    BSIS Representative
-                                </h4>
-                                <div class="radio-buttons">
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSIS Representative" checked />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSIS Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSIS Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--BSEMC Representative-->
-                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
-                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(100px);
-                                border-radius: 16px;">
-                            <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                    style="background: #4338ca;">
-                                    BSEMC Representative
-                                </h4>
-                                <div class="radio-buttons">
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSEMC Representative" checked />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSEMC Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BSEMC Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--BLIS Representative-->
-                        <div class="filter backdrop-blur-3xl w-full h-full p-5 pl-4 pr-4 border order-first border-white shadow-xl"
-                            style=" background: linear-gradient(118.32deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-                                backdrop-filter: blur(100px);
-                                border-radius: 16px;">
-                            <div class="flex items-center flex-col w-auto h-auto">
-                                <h4 class="flex flex-col justify-center text-center w-auto h-auto p-3 pl-7 pr-7 tracking-wider rounded-lg text-white text-lg sm:w-auto md:text-lg filter drop-shadow-lg"
-                                    style="background: #4338ca;">
-                                    BLIS Representative
-                                </h4>
-                                <div class="radio-buttons">
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BLIS Representative" checked />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-pink-400 to-pink-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Eduardo Bentain III</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BLIS Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-purple-400 to-purple-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Elaisha Diana</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                    <label class="custom-radio">
-                                        <input type="radio" name="BLIS Representative" />
-                                        <span class="radio-btn pt-4 pb-4">
-                                            <i class="las la-check"></i>
-                                            <span
-                                                class="bg-gradient-to-r from-blue-400 to-blue-300 rounded-md w-auto h-auto">
-                                                <p class="p-3 text-white text-sm">Julliane Camarista</p>
-                                            </span>
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
                 <a href="">
@@ -1047,6 +912,8 @@
             modal.classList.toggle('pointer-events-none')
             body.classList.toggle('modal-active')
         }
+
+        
     </script>
 </body>
 
