@@ -18,7 +18,7 @@
     }
     
     .nav-item {
-        @apply sm:flex sm:flex-row sm:items-center space-x-2 p-2 text-indigo-700;
+        @apply sm:flex sm:flex-row sm:items-center space-x-2 p-2 text-indigo-700 lg:hover:bg-indigo-100 lg:p-3 rounded-md;
     }
     
     .nav-item > svg > path {

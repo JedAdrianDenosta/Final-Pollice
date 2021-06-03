@@ -823,54 +823,47 @@
     </div>
 
     <!--Modal-->
-    <div class="modal font-body opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+    <div class="modal rounded-lg font-body opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
         style="color: #333333;">
         <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
 
-        <div class="modal-container bg-white w-11/12  md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+        <div class="modal-container bg-white w-9/12 md:w-11/12  md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
 
-            <div
+            <!--<div
                 class="modal-close  absolute top-0 p-4 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
                 <span class="text-xs">(Esc)</span>
-            </div>
+            </div>-->
 
             <!-- Add margin if you want to see some of the overlay behind the modal-->
-            <div class="modal-content py-4 text-left px-6">
+            <div class="modal-content text-left p-8 pt-6 md:p-10 md:pt-8 ">
                 <!--Title-->
+                <div class="modal-close cursor-pointer z-50 flex flex-row justify-end">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
                 <div class="flex justify-between items-center pb-3">
-                    <p class="text-2xl font-bold">Simple Modal!</p>
-                    <div class="modal-close cursor-pointer z-50">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </div>
+                    <p class="text-xl font-bold py-2 md:text-2xl md:py-4 md:pt-2">Hello again, Anna!</p>
+                    
                 </div>
 
                 <!--Body-->
-                <p>Password Confirm</p>
-                <div class="py-4">
-                    <div class="flex flex-row items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="">
-                            <path fill-rule="evenodd"
-                                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <input type="text" placeholder="Enter password" name="Confirm password" id=""
-                            class="outline-none rounded-sm p-1 border-solid ring-2 ring-gray-400 hover:border-indigo-500 ring-opacity-50">
-                    </div>
+                <div class="p-2 py-4 md:p-4 md:py-8 flex flex-row justify-center">
+                    <img src="img/modal-illustration/Saly-22.svg" class="w-auto h-auto" alt="">
                 </div>
+                <p class="py-6 text-base md:py-10 text-center md:text-xl text-green-500">Would you like to submit your vote?</p>
+                
 
                 <!--Footer-->
                 <div class="flex justify-end pt-2">
-                    <button
-                        class="modal-close px-4 bg-transparent p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
-                    <button class="px-4 bg-indigo-500 p-3 rounded-lg text-white hover:bg-indigo-400">Confirm</button>
+                    <button class="modal-close px-3 md:px-4 bg-transparent p-2 md:p-3 rounded-lg text-indigo-500 hover:bg-gray-100 hover:text-indigo-400 mr-2">Cancel</button>
+                    <button class="px-3 md:px-4 bg-indigo-500 p-2 md:p-3 rounded-lg text-white hover:bg-indigo-400">Okay</button>
                 </div>
             </div>
         </div>
